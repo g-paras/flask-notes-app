@@ -21,7 +21,7 @@ def login():
             else:
                 flash('Incorrect Credentials, try again', category='error')
         else:
-            flask('User does not exixt.', category='error')
+            flash('User does not exixt.', category='error')
     return render_template('login.html', user=current_user)
 
 
