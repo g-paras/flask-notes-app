@@ -1,8 +1,10 @@
-from flask import Blueprint, render_template, request, flash, jsonify
-from flask_login import login_required, current_user
-from .models import Note
-from . import db
 import json
+
+from flask import Blueprint, flash, jsonify, render_template, request
+from flask_login import current_user, login_required
+
+from . import db
+from .models import Note
 
 views = Blueprint('views', __name__)
 
